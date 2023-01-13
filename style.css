@@ -5,9 +5,8 @@
 
 body {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
     background: linear-gradient(154.5deg,rgb(0, 128, 255) 50%,rgb(255, 0, 93) 50%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,8 +83,32 @@ p{
 .fa-brands{
     font-size: 25px;
     color: #fff;
+    display: inline-block;
     transition: all 0.5s ease-in-out;
 }
+
+
+.NB{ 
+    color: #333;
+    position: absolute;
+    bottom: 10px;
+    background: rgb(255 255 255 / 60%);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-weight: normal;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.NB:hover{
+    opacity: 1;
+}
+
+.NB .fa-solid{
+    padding: 0px 5px 0px 2px;
+}
+
 
 @media (max-width: 1100px) {
     body{
