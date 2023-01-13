@@ -64,7 +64,7 @@ h2{
 }
 
 p{
-    text-align: justify;
+    text-align: center;
     padding: 10px;
     padding-top: 0;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
@@ -94,6 +94,7 @@ p{
 
     .box1{
         order: 1;
+        scale: 1;
     }
     .box2{
         order: 2;
