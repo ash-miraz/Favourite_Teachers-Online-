@@ -16,6 +16,22 @@ body {
     position: relative;
 }
 
+@keyframes box{
+
+    0%{
+        margin-top: -800px;
+        opacity: 0%;
+        scale: 0.8;
+    }
+
+    100%{
+        margin-top: 0;
+        opacity: 100%;
+        scale: 1;
+    }
+
+}
+
 .box {
     width: 320px;
     height: 450px;
@@ -24,6 +40,8 @@ body {
     border-radius: 10px;
     box-shadow: 2px 3px 14px rgb(77, 73, 73);
     overflow: hidden;
+    animation-name: box;
+    animation-duration: 0.9s;
 }
 
 .box:hover {
@@ -43,9 +61,25 @@ img{
     object-position: center;
 }
 
+@keyframes box1{
+    0%{
+        margin-top: -800px;
+        opacity: 0%;
+        scale: 0.8;
+    }
+
+    100%{
+        opacity: 100%;
+        margin-top: 0;
+        scale: 1.08;
+    }
+}
+
 .box1{
     order: 2;
     scale: 1.08;
+    animation-name: box1;
+    animation-duration: 0.8s;
 }
 
 .box2{
@@ -82,18 +116,39 @@ p{
     align-items: center;
 }
 
+@keyframes notify{
+    0%{
+        width: 1px;
+        opacity: 0.1;
+    }
+    100%{
+        width: 500px;
+        opacity: 0.5;
+    }
+}
+
 .NB{ 
-    color: #333;
-    position: absolute;
-    bottom: 10px;
-    background: rgb(255 255 255 / 60%);
+    justify-content: center;
+    align-items: center;
+    width: 500px;
     border-radius: 10px;
     padding: 10px;
+    color: #333;
+    position: absolute;
+    overflow: hidden;
+    bottom: 10px;
+    background: rgb(255 255 255 / 60%);
+    transition: all 0.5s;
+    opacity: 0.5;
+    animation-name: notify;
+    animation-duration: 2s;
+}
+
+.NBj{
+    text-align: center;
+    width: 495px;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     font-weight: normal;
-    opacity: 0.5;
-    transition: all 0.5s;
-    text-align: center;
 }
 
 .NB:hover{
@@ -134,7 +189,9 @@ p{
     .NB{
         position: absolute;
         bottom: 10px;
-
+    }
+    .NBj{
+        width: auto;
     }
 }
 
@@ -142,6 +199,6 @@ p{
 
     .NB{
         bottom: 10px;
-        max-width: 400px;       
+        max-width: 400px; 
     }
 }
