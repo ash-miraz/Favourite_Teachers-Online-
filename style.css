@@ -42,6 +42,7 @@ body {
     overflow: hidden;
     animation-name: box;
     animation-duration: 0.9s;
+    animation-iteration-count: 1;
 }
 
 .box:hover {
@@ -80,6 +81,7 @@ img{
     scale: 1.08;
     animation-name: box1;
     animation-duration: 0.8s;
+    animation-iteration-count: 1;
 }
 
 .box2{
@@ -142,6 +144,7 @@ p{
     opacity: 0.5;
     animation-name: notify;
     animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
 .NBj{
